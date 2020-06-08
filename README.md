@@ -41,7 +41,7 @@ if(!status.ok())
     LOG(ERROR)<<"HashTable:"<<status.error_message();
 ```
 
-# C++ Session Run "serve"
+# 2.C++ Session Run "serve"
 
 ##加载模型
 
