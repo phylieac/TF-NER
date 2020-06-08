@@ -17,7 +17,7 @@
 #define NER_API extern "C" __attribute__((visibility("default")))
 #endif
 
-NER_API bool NER_INIT(const char *data,int vocab_size=6753,int UNK_id=6752,bool is_ner=false);
+NER_API bool NER_INIT(const char *data,int vocab_size=6753,int UNK_id=6752);
 NER_API const char* NER_GET(const char *content);
 
 #endif /* NER_API_hpp */

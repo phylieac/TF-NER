@@ -11,7 +11,7 @@
 
 NER_LSTM *ner;
 
-bool NER_INIT(const char *data,int vocab_size,int UNK_id,bool is_ner)
+bool NER_INIT(const char *data,int vocab_size,int UNK_id)
 {
     std::string model_path(data);
     std::string vocab_file=model_path+"/words.txt";

@@ -43,6 +43,7 @@
 		A2186EB2248E047A00CA5B14 /* libtensorflow_cc.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtensorflow_cc.so; path = ../../libtensorflow/lib/libtensorflow_cc.so; sourceTree = "<group>"; };
 		A2186EB9248E049200CA5B14 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2186EBB248E049200CA5B14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A2186EC1248E4C4B00CA5B14 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 		A2186E88248DFDBB00CA5B14 = {
 			isa = PBXGroup;
 			children = (
+				A2186EC1248E4C4B00CA5B14 /* README.md */,
 				A2186E98248E02BD00CA5B14 /* c_api */,
 				A2186E9B248E02BD00CA5B14 /* decoder */,
 				A2186EA5248E02BD00CA5B14 /* encoder */,
