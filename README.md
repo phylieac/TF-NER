@@ -1,4 +1,4 @@
-# TF-NER  A C++ dylib for Tensorflow: Doing NER
+# TF-NER:  A C++ dylib for Tensorflow: Doing NER
 ***This project will generate a dynamic library.***
 > ###Export Funtion:
 > ```c++
