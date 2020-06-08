@@ -43,7 +43,7 @@ if(!status.ok())
 
 # 2.C++ Session Run "serve"
 
-##加载模型
+## 加载模型
 
 ```c++
 #include <tensorflow/core/public/session.h>
@@ -62,10 +62,9 @@ tensorflow::SavedModelBundle bundle;
 //加载模型
 status=tensorflow::LoadSavedModel(sess_options, run_options, model, { NER_LSTM::kSavedModelTagServe }, &bundle);
 sess=std::move(bundle.session);
-
 ```
 
-##预测
+## 预测
 
 ```c++
 //PlaceHolder
