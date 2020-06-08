@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2186EA7248E02BD00CA5B14 /* NER_API.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A2186E99248E02BD00CA5B14 /* NER_API.hpp */; };
+		A2186EA8248E02BD00CA5B14 /* NER_API.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2186E9A248E02BD00CA5B14 /* NER_API.cpp */; };
+		A2186EA9248E02BD00CA5B14 /* Decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A2186E9C248E02BD00CA5B14 /* Decoder.h */; };
+		A2186EAC248E02BD00CA5B14 /* NER_LSTM.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A2186EA2248E02BD00CA5B14 /* NER_LSTM.hpp */; };
+		A2186EAD248E02BD00CA5B14 /* NER_LSTM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2186EA3248E02BD00CA5B14 /* NER_LSTM.cpp */; };
+		A2186EAF248E02BD00CA5B14 /* Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A2186EA6248E02BD00CA5B14 /* Encoder.h */; };
+		A2186EB3248E047A00CA5B14 /* libtensorflow_framework.so in Frameworks */ = {isa = PBXBuildFile; fileRef = A2186EB1248E047A00CA5B14 /* libtensorflow_framework.so */; };
+		A2186EB4248E047A00CA5B14 /* libtensorflow_cc.so in Frameworks */ = {isa = PBXBuildFile; fileRef = A2186EB2248E047A00CA5B14 /* libtensorflow_cc.so */; };
+		A2186EBC248E049200CA5B14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2186EBB248E049200CA5B14 /* main.cpp */; };
+		A2186EC0248E07AF00CA5B14 /* libTF-NER.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2186E91248DFDBB00CA5B14 /* libTF-NER.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A2186EB7248E049200CA5B14 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A2186E91248DFDBB00CA5B14 /* libTF-NER.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libTF-NER.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2186E99248E02BD00CA5B14 /* NER_API.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NER_API.hpp; sourceTree = "<group>"; };
+		A2186E9A248E02BD00CA5B14 /* NER_API.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NER_API.cpp; sourceTree = "<group>"; };
+		A2186E9C248E02BD00CA5B14 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		A2186EA2248E02BD00CA5B14 /* NER_LSTM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NER_LSTM.hpp; sourceTree = "<group>"; };
+		A2186EA3248E02BD00CA5B14 /* NER_LSTM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NER_LSTM.cpp; sourceTree = "<group>"; };
+		A2186EA6248E02BD00CA5B14 /* Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encoder.h; sourceTree = "<group>"; };
+		A2186EB1248E047A00CA5B14 /* libtensorflow_framework.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtensorflow_framework.so; path = ../../libtensorflow/lib/libtensorflow_framework.so; sourceTree = "<group>"; };
+		A2186EB2248E047A00CA5B14 /* libtensorflow_cc.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtensorflow_cc.so; path = ../../libtensorflow/lib/libtensorflow_cc.so; sourceTree = "<group>"; };
+		A2186EB9248E049200CA5B14 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2186EBB248E049200CA5B14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2186E8F248DFDBB00CA5B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2186EB3248E047A00CA5B14 /* libtensorflow_framework.so in Frameworks */,
+				A2186EB4248E047A00CA5B14 /* libtensorflow_cc.so in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2186EB6248E049200CA5B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2186EC0248E07AF00CA5B14 /* libTF-NER.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2186E88248DFDBB00CA5B14 = {
+			isa = PBXGroup;
+			children = (
+				A2186E98248E02BD00CA5B14 /* c_api */,
+				A2186E9B248E02BD00CA5B14 /* decoder */,
+				A2186EA5248E02BD00CA5B14 /* encoder */,
+				A2186E9E248E02BD00CA5B14 /* tf */,
+				A2186EBA248E049200CA5B14 /* test */,
+				A2186E92248DFDBB00CA5B14 /* Products */,
+				A2186EB0248E047900CA5B14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2186E92248DFDBB00CA5B14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2186E91248DFDBB00CA5B14 /* libTF-NER.dylib */,
+				A2186EB9248E049200CA5B14 /* test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2186E98248E02BD00CA5B14 /* c_api */ = {
+			isa = PBXGroup;
+			children = (
+				A2186E99248E02BD00CA5B14 /* NER_API.hpp */,
+				A2186E9A248E02BD00CA5B14 /* NER_API.cpp */,
+			);
+			path = c_api;
+			sourceTree = "<group>";
+		};
+		A2186E9B248E02BD00CA5B14 /* decoder */ = {
+			isa = PBXGroup;
+			children = (
+				A2186E9C248E02BD00CA5B14 /* Decoder.h */,
+			);
+			path = decoder;
+			sourceTree = "<group>";
+		};
+		A2186E9E248E02BD00CA5B14 /* tf */ = {
+			isa = PBXGroup;
+			children = (
+				A2186E9F248E02BD00CA5B14 /* model */,
+			);
+			path = tf;
+			sourceTree = "<group>";
+		};
+		A2186E9F248E02BD00CA5B14 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A2186EA0248E02BD00CA5B14 /* ner */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A2186EA0248E02BD00CA5B14 /* ner */ = {
+			isa = PBXGroup;
+			children = (
+				A2186EA2248E02BD00CA5B14 /* NER_LSTM.hpp */,
+				A2186EA3248E02BD00CA5B14 /* NER_LSTM.cpp */,
+			);
+			path = ner;
+			sourceTree = "<group>";
+		};
+		A2186EA5248E02BD00CA5B14 /* encoder */ = {
+			isa = PBXGroup;
+			children = (
+				A2186EA6248E02BD00CA5B14 /* Encoder.h */,
+			);
+			path = encoder;
+			sourceTree = "<group>";
+		};
+		A2186EB0248E047900CA5B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2186EB2248E047A00CA5B14 /* libtensorflow_cc.so */,
+				A2186EB1248E047A00CA5B14 /* libtensorflow_framework.so */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2186EBA248E049200CA5B14 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				A2186EBB248E049200CA5B14 /* main.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A2186E8D248DFDBB00CA5B14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2186EA7248E02BD00CA5B14 /* NER_API.hpp in Headers */,
+				A2186EA9248E02BD00CA5B14 /* Decoder.h in Headers */,
+				A2186EAC248E02BD00CA5B14 /* NER_LSTM.hpp in Headers */,
+				A2186EAF248E02BD00CA5B14 /* Encoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A2186E90248DFDBB00CA5B14 /* TF-NER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2186E95248DFDBB00CA5B14 /* Build configuration list for PBXNativeTarget "TF-NER" */;
+			buildPhases = (
+				A2186E8D248DFDBB00CA5B14 /* Headers */,
+				A2186E8E248DFDBB00CA5B14 /* Sources */,
+				A2186E8F248DFDBB00CA5B14 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TF-NER";
+			productName = "TF-NER";
+			productReference = A2186E91248DFDBB00CA5B14 /* libTF-NER.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		A2186EB8248E049200CA5B14 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2186EBD248E049200CA5B14 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				A2186EB5248E049200CA5B14 /* Sources */,
+				A2186EB6248E049200CA5B14 /* Frameworks */,
+				A2186EB7248E049200CA5B14 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = A2186EB9248E049200CA5B14 /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2186E89248DFDBB00CA5B14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "潘洪岩";
+				TargetAttributes = {
+					A2186E90248DFDBB00CA5B14 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A2186EB8248E049200CA5B14 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = A2186E8C248DFDBB00CA5B14 /* Build configuration list for PBXProject "TF-NER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2186E88248DFDBB00CA5B14;
+			productRefGroup = A2186E92248DFDBB00CA5B14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2186E90248DFDBB00CA5B14 /* TF-NER */,
+				A2186EB8248E049200CA5B14 /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2186E8E248DFDBB00CA5B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2186EAD248E02BD00CA5B14 /* NER_LSTM.cpp in Sources */,
+				A2186EA8248E02BD00CA5B14 /* NER_API.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2186EB5248E049200CA5B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2186EBC248E049200CA5B14 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A2186E93248DFDBB00CA5B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A2186E94248DFDBB00CA5B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A2186E96248DFDBB00CA5B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					/Users/panhongyan/libtensorflow/include,
+					/usr/local/Cellar/boost/1.70.0/include/,
+				);
+				LD_RUNPATH_SEARCH_PATHS = /Users/panhongyan/libtensorflow/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A2186E97248DFDBB00CA5B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					/Users/panhongyan/libtensorflow/include,
+					/usr/local/Cellar/boost/1.70.0/include/,
+				);
+				LD_RUNPATH_SEARCH_PATHS = /Users/panhongyan/libtensorflow/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A2186EBE248E049200CA5B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A2186EBF248E049200CA5B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2186E8C248DFDBB00CA5B14 /* Build configuration list for PBXProject "TF-NER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2186E93248DFDBB00CA5B14 /* Debug */,
+				A2186E94248DFDBB00CA5B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2186E95248DFDBB00CA5B14 /* Build configuration list for PBXNativeTarget "TF-NER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2186E96248DFDBB00CA5B14 /* Debug */,
+				A2186E97248DFDBB00CA5B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2186EBD248E049200CA5B14 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2186EBE248E049200CA5B14 /* Debug */,
+				A2186EBF248E049200CA5B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2186E89248DFDBB00CA5B14 /* Project object */;
+}
