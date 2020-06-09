@@ -1,6 +1,6 @@
 # TF-NER:  A C++ dylib for Tensorflow: Doing NER
 ***This xcode project will generate a dynamic library. But also support other OS.***
-###由Python生成.pb模型后，采用C++封装的方式，完成方便的部署方式，这里封装成动态库，方便各语言对模型的调用。###
+***由Python生成.pb模型后，采用C++封装的方式，完成方便的部署方式，这里封装成动态库，方便各语言对模型的调用。***
 > ###导出函数:
 > ```c++
 > /** @data: model path
@@ -92,4 +92,4 @@ inline std::map<std::string,std::string> decoder::Decoder::decode(std::wstring &
 
 [Mac](链接: https://pan.baidu.com/s/1bctxhoGw3Y2AMH0Af9rzPQ  密码: 011j)
 
-###不同平台的硬件可能需要重新编译TensorFlow的c++动态库，以支持相应硬件，编译方式参考[TensorFlow官方文档](https://tensorflow.google.cn/install)，当前方式推荐使用bazel编译###
+***不同平台的硬件可能需要重新编译TensorFlow的c++动态库，以支持相应硬件，编译方式参考[TensorFlow官方文档](https://tensorflow.google.cn/install)，当前方式推荐使用bazel编译***
