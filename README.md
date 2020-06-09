@@ -92,4 +92,4 @@ inline std::map<std::string,std::string> decoder::Decoder::decode(std::wstring &
 
 [Mac](链接: https://pan.baidu.com/s/1bctxhoGw3Y2AMH0Af9rzPQ  密码: 011j)
 
-##不同平台的硬件可能需要重新编译TensorFlow的c++动态库，以支持相应硬件，编译方式参考[TensorFlow官方文档(https://tensorflow.google.cn/install)，当前方式推荐使用bazel编译#
+###不同平台的硬件可能需要重新编译TensorFlow的c++动态库，以支持相应硬件，编译方式参考[TensorFlow官方文档](https://tensorflow.google.cn/install)，当前方式推荐使用bazel编译###
