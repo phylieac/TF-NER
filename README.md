@@ -1,6 +1,7 @@
 # TF-NER:  A C++ dylib for Tensorflow: Doing NER
 ***This project will generate a dynamic library.***
-> ###Export Funtion:
+###由Python生成.pb模型后，采用C++封装的方式，完成方便的部署方式，这里封装成动态库，方便各语言对模型的调用。###
+> ###导出函数:
 > ```c++
 > /** @data: model path
 >  ** @vocab_size: vocab size
@@ -14,10 +15,10 @@
 > const char* NER_GET(const char* content)
 > ```
 
-# 1.Encoder part
+# 1.Encoder
 **中文在C/C++环境中，不同于英文字符，这里将使用wchar_t，宽字符来处理中文字符序列。然后将字符转化为机器码做HashTable，从而将模型输入和输出全部映射为数字。**
 
-例：TensorFlow中实现查表操作得到Tensor
+例：TensorFlow中实现查表操作得到tensor
 
 TensorFlow HashTable：
 
@@ -86,3 +87,9 @@ std::cout<<result.tensor<int, 2>()<<std::endl;//Result Label ID
 //内联函数还原label id对应标签，同样字符以wchar_t处理。
 inline std::map<std::string,std::string> decoder::Decoder::decode(std::wstring &stc, Tensor &result, long size)
 ```
+
+# Tensorflow 1.13.2: C++ Include & Lib
+
+[Mac](链接: https://pan.baidu.com/s/1bctxhoGw3Y2AMH0Af9rzPQ  密码: 011j)
+
+##不同平台的硬件可能需要重新编译TensorFlow的c++动态库，以支持相应硬件，编译方式参考[TensorFlow官方文档(https://tensorflow.google.cn/install)，当前方式推荐使用bazel编译#
