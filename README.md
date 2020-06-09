@@ -2,6 +2,8 @@
 ***This xcode project will generate a dynamic library. But also support other OS.***
 ***由Python生成.pb模型后，采用C++封装的方式，完成方便的部署方式，这里封装成动态库，方便各语言对模型的调用。***
 > ###导出函数:
+>（1） NER_INIT为加载模型参数，指定Python生成的saved_mode.pb目录，中同时包含words.txt的词表，为输入内容提供查表操作。
+>（2）NER_GET出入字符串，得到格式化的结果串
 > ```c++
 > /** @data: model path; 指定包含words.txt,saved_model.pb和variables的目录
 >  ** @vocab_size: vocab size; word2.txt 大小
