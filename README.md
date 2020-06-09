@@ -1,5 +1,5 @@
 # TF-NER:  A C++ dylib for Tensorflow: Doing NER
-***This project will generate a dynamic library.***
+***This xcode project will generate a dynamic library. But also support other OS.***
 ###由Python生成.pb模型后，采用C++封装的方式，完成方便的部署方式，这里封装成动态库，方便各语言对模型的调用。###
 > ###导出函数:
 > ```c++
