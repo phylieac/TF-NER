@@ -3,9 +3,9 @@
 ***由Python生成.pb模型后，采用C++封装的方式，完成方便的部署方式，这里封装成动态库，方便各语言对模型的调用。***
 > ###导出函数:
 > ```c++
-> /** @data: model path
->  ** @vocab_size: vocab size
->  ** @UNK_id: unkown word id in vocab
+> /** @data: model path; 指定包含words.txt,saved_model.pb和variables的目录
+>  ** @vocab_size: vocab size; word2.txt 大小
+>  ** @UNK_id: unkown word id in vocab; words.txt中unk的id
 >  ** @return: loaded model state
 >  **/ 
 > bool NER_INIT(const char *data,int vocab_size,int UNK_id)

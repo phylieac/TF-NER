@@ -11,7 +11,7 @@
 #include "c_api/NER_API.hpp"
 
 int main(int argc, const char * argv[]) {
-    const char *data="/Users/panhongyan/git/zh-NER-TF/data_path_save/1591599747/checkpoints/model";
+    const char *data="/Users/panhongyan/git/zh-NER-TF/data_path_save/1591709661/checkpoints/model";
     bool s=NER_INIT(data,3613,3612);
     std::cout<<"初始化："<<s<<std::endl;
     
