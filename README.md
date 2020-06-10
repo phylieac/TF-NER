@@ -17,7 +17,7 @@
 > const char* NER_GET(const char* content)
 > ```
 
-# 1.Encoder
+## 1.Encoder
 **中文在C/C++环境中，不同于英文字符，这里将使用wchar_t，宽字符来处理中文字符序列。然后将字符转化为机器码做HashTable，从而将模型输入和输出全部映射为数字。**
 
 例：TensorFlow中实现查表操作得到tensor
@@ -44,9 +44,9 @@ if(!status.ok())
     LOG(ERROR)<<"HashTable:"<<status.error_message();
 ```
 
-# 2.C++ Session Run "serve"
+## 2.C++ Session Run "serve"
 
-## 加载模型
+### 加载模型
 
 ```c++
 #include <tensorflow/core/public/session.h>
@@ -67,7 +67,7 @@ status=tensorflow::LoadSavedModel(sess_options, run_options, model, { NER_LSTM::
 sess=std::move(bundle.session);
 ```
 
-## 预测
+### 预测
 
 ```c++
 //PlaceHolder
@@ -84,13 +84,13 @@ Tensor result=outputs[0];
 std::cout<<result.tensor<int, 2>()<<std::endl;//Result Label ID
 ```
 
-## Label信息还原
+### Label信息还原
 ```c++
 //内联函数还原label id对应标签，同样字符以wchar_t处理。
 inline std::map<std::string,std::string> decoder::Decoder::decode(std::wstring &stc, Tensor &result, long size)
 ```
 
-# Tensorflow 1.13.2: C++ Include & Lib
+## Tensorflow 1.13.2: C++ Include & Lib
 
 [Mac](链接: https://pan.baidu.com/s/1bctxhoGw3Y2AMH0Af9rzPQ  密码: 011j)
 
